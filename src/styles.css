@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: karla;
+    src: url(./assets/fonts/Karla-Italic-VariableFont_wght.ttf);
+}
+:root{
+    /* Primary */
+    --lighter-green: hsl(148, 38%, 91%);
+    --medium-green: hsl(169, 82%, 27%);
+    --dark-green: hwb(168 2% 67%); 
+    --red: hsl(0, 66%, 54%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --medium-grey: hsl(186, 15%, 59%);
+    --darker-grey: hsl(187, 24%, 22%); 
+}
+*, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: karla, "sans-serif";
+    background-color: var(--lighter-green);
+    color: var(--darker-grey);
+}
